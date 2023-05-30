@@ -38,8 +38,7 @@ class _BeritaPageState extends State<BeritaPage> {
                 } else {
                   ListNewsModel list = ListNewsModel.fromJson(snapshot.data);
                   return ListView.builder(
-                      itemCount: list.data!.posts!
-                          .length, //error tidak bisa menampilkan data
+                      itemCount: list.data!.posts!.length,
                       itemBuilder: (context, index) {
                         return Card(
                           child: GestureDetector(
